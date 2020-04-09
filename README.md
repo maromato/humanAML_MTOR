@@ -16,17 +16,27 @@ mTORC1 realed gene signatures were used
 
 3.CUNNINGHAM_RAPAMYCIN_DN  (MSigDB)
 
-4.mouse DEG (OUR DATA SETS)
+4.mouse DEG (OUR DATA SETS) -- Not inclueded 
 
 # (Process)
 
-1. AML patients sample were stratified with hierachial clustering based on the expression of mTORC1 relaed gene signatures. 
-2. mTORC1 high and low culsters are identified and survival curve is drawn for these two clusters.
+1. AML patients sample will be stratified with hierachial clustering based on the expression of mTORC1 relaed gene signatures. 
+2. mTORC1 high and low culsters will beidentified and survival curve is drawn for these two clusters.
 3. p-value will be caluculated at day 300, 600, 900 and overall.
-4. Differentially expressed gene (q-value < 0.01) will be identified. 
+4. Differentially expressed gene (q-value < 0.01) will be identified.
+
+# (Programs)
+
+1.RAPAMYCIN_SENSITIVE_GENES (MSigDB) :AML_MTORP_RAP.R
+
+2.HALLMARK_MTORC1_SIGNALING (MSigDB) :AML_MTORP_Hallmarks.R
+
+3.CUNNINGHAM_RAPAMYCIN_DN  (MSigDB) :AML_MTORP_CUNNING.R
+
+4.mouse DEG (OUR DATA SETS) :AML_MTORP_DEG.R
 
 # (Software)
-The program was written by R 3.6.1
+The programs were written by R 3.6.1
 This is a beta-test version for educational purposes and please let me know if there are any questions (toshihiko.oki@gmail.com).
 
 
