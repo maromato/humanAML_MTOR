@@ -16,7 +16,7 @@ mTORC1 realed gene signatures were used
 
 3.CUNNINGHAM_RAPAMYCIN_DN  (MSigDB)
 
-4.mouse DEG (OUR DATA SETS) -- Not inclueded 
+4.mouse DEG (OUR DATA SETS) -- Not currently included. 
 
 # (Process)
 
@@ -36,7 +36,8 @@ mTORC1 realed gene signatures were used
 4.mouse DEG (OUR DATA SETS) :AML_MTORP_DEG.R
 
 # (Software)
-The programs were written by R 3.6.1
+The programs were written by R 3.6.1.
+
 This is a beta-test version for educational purposes and please let me know if there are any questions (toshihiko.oki@gmail.com).
 
 
