@@ -18,7 +18,7 @@ library(dendextend)
 
 rm(list = ls())
 getwd()
-setwd("/Users/xng7136/Downloads/GSE12417_7")
+setwd("/Users/USERNAME/YOUR PATH/YOUR FOLDER")
 
 ############## set up the data set############
 # read trascriptome data 
