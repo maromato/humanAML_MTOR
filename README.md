@@ -6,7 +6,7 @@ This is the survival analysis with AML patients derived microarray data and mTOR
 
 AML transcriptome data was originally derived from Blood 2008 Nov 15;112(10):4193-201 (PMID: 18716133) and the data was deposited at GEO (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE12417)(GSE12417). Expression data (GSE12417_mod_4.txt) and meta data (GSE12417-GPL96_meta.txt) was created based on the site as above. 
 
-# 2. Gene signature sets
+#3 2. Gene signature sets
 
 mTORC1 realed gene signatures were used 
 
@@ -18,14 +18,17 @@ mTORC1 realed gene signatures were used
 
 4.mouse DEG (OUR DATA SETS) -- Not currently included. 
 
-# 3. Overview of the Process
+## 3. Overview of the Process
 
 1. AML patients sample will be stratified with hierachial clustering based on the expression of mTORC1 relaed gene signatures. 
+
 2. mTORC1 high and low culsters will beidentified and survival curve is drawn for these two clusters.
+
 3. p-value will be caluculated at day 300, 600, 900 and overall.
+
 4. Differentially expressed gene (q-value < 0.05) will be identified.
 
-# 4. Programs files (gene signature/R code)
+## 4. Programs files (gene signature/R code)
 
 1.RAPAMYCIN_SENSITIVE_GENES (MSigDB) :AML_MTORP_RAP.R
 
