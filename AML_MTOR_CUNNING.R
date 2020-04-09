@@ -1,29 +1,4 @@
 
-install.packages("pheatmap")
-install.packages("RColorBrewer")
-install.packages("maptools")
-install.packages("ggplot2")
-install.packages("gplots")
-install.packages("calibrate")
-install.packages("survival")
-install.packages("survminer")
-install.packages("dplyr")
-install.packages("data.table")
-install.packages("hclust")
-install.packages("dendextend")
-
-if (!requireNamespace("BiocManager", quietly = TRUE))
-  install.packages("BiocManager")
-BiocManager::install("edgeR")
-BiocManager::install("made4")
-BiocManager::install("fgsea")
-BiocManager::install("MIRA")
-BiocManager::install("bsseq")
-BiocManager::install("GenomicRanges")
-BiocManager::install("genefilter")
-BiocManager::install("reshape2")
-
-
 library(pheatmap)
 library(RColorBrewer)
 library(edgeR)
@@ -44,7 +19,7 @@ library(dendextend)
 R.version
 rm(list = ls())
 getwd()
-setwd("/Users/xng7136/Downloads/GSE12417_7")
+setwd("/Users/USERNAME/YOUR PATH/YOUR FOLDER")
 
 ############## set up the data set############
 # read trascriptome data 
