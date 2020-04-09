@@ -41,12 +41,9 @@ head(s)
 # read gene set data
 b = read.table("RAPAMYCIN_SENSITIVE_GENES_mod.txt",sep="\t",header=F)
 c = read.table("HALLMARK_MTORC1_SIGNALING_mod.txt",sep="\t",header=F)
-d = read.table("DEG_venus_high_low.txt",sep="\t",header=F)
+#d = read.table("DEG_venus_high_low.txt",sep="\t",header=F)
 e = read.table("CUNNINGHAM_RAPAMYCIN_DN.txt",sep="\t",header=F)
-f = read.table("DEG_NT_TX_1.txt",sep="\t",header=F)
-g = read.table("DEG_venus_low_high_all.txt",sep="\t",header=F)
-h = read.table("Myc_core.txt",sep="\t",header=F)
-i = read.table("YUAN_MTOR_SIG.txt",sep="\t",header=F)
+
 
 ################ Heatmap with CUNNINGHAM_RAPAMYCIN_DN.txt #######################
 z4 <- y[rownames(y) %in% e[,1],]
