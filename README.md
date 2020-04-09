@@ -23,7 +23,7 @@ mTORC1 realed gene signatures were used
 1. AML patients sample will be stratified with hierachial clustering based on the expression of mTORC1 relaed gene signatures. 
 2. mTORC1 high and low culsters will beidentified and survival curve is drawn for these two clusters.
 3. p-value will be caluculated at day 300, 600, 900 and overall.
-4. Differentially expressed gene (q-value < 0.01) will be identified.
+4. Differentially expressed gene (q-value < 0.05) will be identified.
 
 # 4. Programs files (gene signature/R code)
 
