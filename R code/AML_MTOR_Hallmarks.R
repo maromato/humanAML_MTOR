@@ -200,47 +200,4 @@ intersect(toupper(e[,1]),out4$Gene)
 
 write.table(intersect(toupper(e[,1]),out4$Gene),"human_mouse_MTOR_Hallmark_high_DEG.txt",sep="\t")
 
-#********************************************************************************
-#GSEA for mTORC high and low of MTOR_Hallmark
-target <- intersect(toupper(e[,1]),out4$Gene)
-
-MTOR_H  <- y[rownames(y) %in% target,colnames(MTORhigh)]  
-MTOR_L  <- y[rownames(y) %in% target,colnames(MTORimlow)]  
-dim(MTOR_H)
-dim(MTOR_L)
-rowMeans(MTOR_H)
-FC <- NULL
-FC <- log(rowMeans(MTOR_H)/rowMeans(MTOR_L))
-names(FC) <- rownames(y[rownames(y) %in% target,])
-head(FC)
-length(FC)
-FC[order(names(FC), -abs(FC) )] ### sort first
-FC[ !duplicated(names(FC)) ]  ### Keep highest
-length(FC)
-
-#ep <-gmtPathways("Hallmarks.gmt")
-ep <- gmtPathways("Oki-tools-ver5.gmt")
-#ep <-gmtPathways("Oki-tools-ver6.gmt")
-
-er = FC
-fgseaRes <- fgsea(pathways = ep, 
-                  stats = er,
-                  minSize= 20,
-                  maxSize=500,
-                  nperm=10000)
-
-head(fgseaRes[order(pval), ],30)
-
-topPathwaysUp <- fgseaRes[ES > 0][head(order(pval), n=10), pathway]
-topPathwaysDown <- fgseaRes[ES < 0][head(order(pval), n=10), pathway]
-topPathways <- c(topPathwaysUp, rev(topPathwaysDown))
-
-dev.off()
-
-#topPathways <- fgseaRes[head(order(pval), n=20), pathway]
-
-plotGseaTable(ep[topPathways], er, fgseaRes, 
-              gseaParam = 0.5)
-
-write.table(unlist(fgseaRes[order(pval), ]),"GSEA_mouse_human_MTOR_Hallmarks.txt",sep="\t")
 
