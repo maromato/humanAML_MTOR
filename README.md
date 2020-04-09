@@ -6,15 +6,16 @@ This is the survival analysis with AML patients derived microarray data and mTOR
 
 AML transcriptome data was originally derived from Blood 2008 Nov 15;112(10):4193-201 (PMID: 18716133) and the data was deposited at GEO (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE12417)(GSE12417). Expression data and meta data was created based on the site as above. 
 
+(Gene sets)
 mTORC1 realed gene signatures were used 
 
-1.RAPAMYCIN_SENSITIVE_GENES
+1.RAPAMYCIN_SENSITIVE_GENES (MSigDB)
 
-2.HALLMARK_MTORC1_SIGNALING
+2.HALLMARK_MTORC1_SIGNALING (MSigDB) 
 
-3.CUNNINGHAM_RAPAMYCIN_DN
+3.CUNNINGHAM_RAPAMYCIN_DN  (MSigDB)
 
-4.mouse DEG 
+4.mouse DEG (OUR DATA SETS)
 
 (Process)
 
